@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/fonts.css">
+    <title>Drag and Drop</title>
+</head>
+<body>
+    <form id="upload-form">
+        <div id="alert-container"></div>
+        <div class="heading">
+            <p>Drag & Drop the files</p>
+        </div>
+        <div class="container">
+            <div class="inner-box">
+                <p>Upload</p>
+                <div id="upload-area">
+                    <img src="../image/upload-icon.png" alt="">
+                    <p class="dragText">Drag & Drop files or <span class="browse">Browse</span> <input type="file"
+                            hidden id="file-input" multiple></p>
+                    <p class="sub-heading">Supported formats: JPEG, PNG, GIF, MP4, PDF, PSD, AI, Word, PPT</p>
+                </div>
+                <div id="file-name-container">
+                </div>
+                <div id="loader" style="display: none;"></div>
+                <div class="file-upload-area">
+                    <button id="submit-btn">
+                        <span name="submit" type="submit">UPLOAD FILES</span><span
+                            class="uploading">uploading.....</span>
+                    </button>
+                    <div class="uploaded-file-container">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script src="../js/file-upload.js"></script>
+</body>
+</html>
